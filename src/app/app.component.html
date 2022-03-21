@@ -1,0 +1,26 @@
+<p>Start editing to see some magic happen :)</p>
+<h1>
+  {{ title }}
+  </h1>
+  <h1 [style.color] = "'green'"
+	[style.text-align] = "'center'" >
+	{{ title }} : {{ about }}
+</h1>
+
+<div>
+<form action="">
+  <input type="text" id="Value" name="Value" placeholder="Enter Array"
+    required [(ngModel)]=newItems.Value>
+</form>
+<button type="submit" (click)="AddItems()">Add</button>
+<button type="submit">Update</button>
+<div>
+<div *ngFor="let data of arr;let i=index">
+  <h2> {{data.Value}}</h2>
+  <div>
+</div>
+     <div *ngIf="arr.length==0">
+       <p>List is Empty </p>
+</div>
+</div>
+</div>
